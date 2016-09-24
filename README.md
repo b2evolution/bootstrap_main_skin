@@ -6,3 +6,8 @@ This skin is included in b2evolution 5.1.1 (to be released shortly).
 Link to skin: http://skins.b2evolution.net/bootstrap-main-skin
 
 <img src="bootstrap-main.png"/>
+
+### Update Log:
+
+#### 6.7.6-stable
+- sync with latest bootstrap_main_skin built-in version in b2evolution 6.7.6-stable
