@@ -9,8 +9,8 @@ Link to skin: http://skins.b2evolution.net/bootstrap-main-skin
 
 ### Update Log:
 
-#### 6.7.7-stable
-- Cleanup translation strings in the back-office of the skin
+#### 6.7.8-stable
+- sync with latest bootstrap_main_skin built-in version in b2evolution 6.7.8-stable
 
 #### 6.7.6-stable
 - sync with latest bootstrap_main_skin built-in version in b2evolution 6.7.6-stable
