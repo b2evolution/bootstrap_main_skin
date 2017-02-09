@@ -40,12 +40,10 @@ if( ! empty( $bg_image ) && file_exists( $media_path.$bg_image ) )
 { // If it exists in media folder
 	echo '<img src="'.$media_url.$bg_image.'" />';
 }
-echo '</div>';
+
 ?>
 
-
 <div class="container main_page_wrapper">
-
 
 <div class="row">
 
@@ -205,13 +203,16 @@ echo '</div>';
 
 	</div><!-- .col -->
 
+	<!-- "Slide down" button -->
+	<div class="slide_button_wrap"><a href="#" id="slide_button"><i class="fa fa-angle-down" ></i></a></div>
+
 </div><!-- .row -->
 
 </div><!-- .container -->
-
+</div><!-- #bg_picture -->
 
 <!-- =================================== START OF SECONDARY AREA =================================== -->
-<section class="secondary_area"><!-- white background -->
+<section class="secondary_area" id="slide_destination"><!-- white background, ID is used to slide here from "slide_button" -->
 <div class="container">
 
 	<div class="row">
@@ -303,11 +304,22 @@ echo '</div>';
 
 	</div><!-- .row -->
 
-
 </div><!-- .container -->
 
 </section><!-- .secondary_area -->
 
+<script>
+// Scroll Down to content
+// ======================================================================== /	
+$slide_down = $( "#slide_button" );
+// Smooth scroll to top
+$slide_down.on( "click", function(event) {
+	event.preventDefault();
+	$( "body, html, #skin_wrapper" ).animate({
+		scrollTop: $("#slide_destination").offset().top +26
+	}, 1000);
+});
+</script>
 
 <?php
 // ---------------------------- SITE FOOTER INCLUDED HERE ----------------------------
